@@ -9,4 +9,4 @@ images:
 configMapGenerator:
 - name: configmap
   files:
-  - ../../../appsetting.json
+  - appsetting.json

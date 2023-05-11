@@ -4,9 +4,9 @@ resources:
 - ../../base
 images:
 - name: dummy-registry/image
-  newName: image-registry.openshift-image-registry.svc:5000/cicd/modelo-core-mvc
-  newTag: dev-abc2
+  newName: image-registry.openshift-image-registry.svc:5000/test-src/httpd-sample
+  newTag: v1
 configMapGenerator:
 - name: configmap
   files:
-  - ../../../appsetting.json
+  - appsetting.json

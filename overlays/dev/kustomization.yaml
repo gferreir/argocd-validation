@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+images:
+- name: dummy-registry/image
+  newName: image-registry.openshift-image-registry.svc:5000/test-src/httpd-sample
+  newTag: v1
+configMapGenerator:
+- name: configmap
+  files:
+  - ../../../appsetting.json

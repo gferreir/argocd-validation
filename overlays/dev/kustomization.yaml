@@ -5,7 +5,7 @@ resources:
 images:
 - name: dummy-registry/image
   newName: image-registry.openshift-image-registry.svc:5000/openshift/httpd
-  newTag: v1
+  newTag: latest
 configMapGenerator:
 - name: configmap
   files:
